@@ -30,3 +30,9 @@ html {
   text-align: center;
   border: 10px solid #FFF3B0
 }
+.myPictures{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+}
