@@ -36,3 +36,8 @@ html {
   text-align: center;
   justify-content: center;
 }
+.myInput{
+  font-size: 30px;
+  background-color: #9E2A2B;
+  color: #FFF3B0;
+}
