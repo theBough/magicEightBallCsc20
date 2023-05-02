@@ -21,5 +21,6 @@ function test(){
   var rndNum = Math.random()*10;
   rndNum = Math.floor(rndNum)
   answer.innerHTML += "<br>You:>>" + theirQuestion.value;
-  answer.innerHTML += "<br>"  + responses[rndNum] 
+  answer.innerHTML += "<br>The 8 Ball:>>"  + responses[rndNum] 
+  theirQuestion.value = "";
 }
