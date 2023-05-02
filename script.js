@@ -1,6 +1,8 @@
 var myBtn = document.getElementById("myBtn");
 var theirQuestion = document.getElementById("theirQuestion")
 var answer = document.getElementById("answer")
+var rndNum =0;
+var i =0;
 var responses = [
   "yep",
   "yes",
@@ -14,13 +16,24 @@ var responses = [
   "Why would you even ask that? Of course the answer is YES!!!"
   
 ]
-
 function test(){
   myBtn.innerHTML = "Hello World"
   //the number 10 is the amount of resposes plus 1
-  var rndNum = Math.random()*10;
+  rndNum = Math.random()*10;
   rndNum = Math.floor(rndNum)
   answer.innerHTML += "<br>You:>>" + theirQuestion.value;
-  answer.innerHTML += "<br>The 8 Ball:>>"  + responses[rndNum] 
+  answer.innerHTML += "<br>The 8 Ball:>>"
+  i=0;
+  ghostTyping();
   theirQuestion.value = "";
 }
+function ghostTyping(){
+  if(i < responses[rndNum].length){
+    //this is grabbing the letter at index 'i'
+    //index means position or address.
+    //eg "hello" chatAt(3) would be 'l'
+    answer.innerHTML += responses[rndNum].charAt(i);
+    i++;
+    setTimeout(ghostTyping, 500)
+  }
+}//end function
