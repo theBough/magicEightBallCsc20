@@ -4,9 +4,9 @@ var answer = document.getElementById("answer")
 var rndNum =0;
 var i =0;
 var responses = [
-  "yep",
-  "yes",
-  "of course",
+  "Yep",
+  "Yes",
+  "Of course",
   "I feel 100% confident this will happen",
   "Nope",
   "Hard No",
@@ -14,7 +14,6 @@ var responses = [
   "I have no idea, sorry.",
   "That questions is waaaay to hard for me to answer.",
   "Why would you even ask that? Of course the answer is YES!!!"
-  
 ]
 function test(){
   myBtn.innerHTML = "Hello World"
@@ -34,6 +33,6 @@ function ghostTyping(){
     //eg "hello" chatAt(3) would be 'l'
     answer.innerHTML += responses[rndNum].charAt(i);
     i++;
-    setTimeout(ghostTyping, 500)
+    setTimeout(ghostTyping, 100)
   }
 }//end function
