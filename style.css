@@ -28,7 +28,8 @@ html {
   font-size: 20px;
   width: 30%;
   text-align: center;
-  border: 10px solid #FFF3B0
+  border: 10px solid #FFF3B0;
+  justify-content: center;
 }
 .myPictures{
   width: 100%;
